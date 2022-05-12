@@ -11,13 +11,13 @@ int myGlobalVariable;
 
 // Functions must be declared or defined before they are used.
 void mathExample(void);
-void scopeExample(void);
+void stackExample(void);
 
 int main(void)
 {
   mathExample();
 
-  scopeExample();
+  stackExample();
 }
 
 void mathExample(void)
@@ -30,9 +30,9 @@ void mathExample(void)
   printf("3 + 4 = %i\n", sum);
 }
 
-void scopeExample(void)
+void stackExample(void)
 {
-  printf("\n-----Scope Example-----\n");
+  printf("\n-----stack Example-----\n");
 
   // Printing our global and static variables
   printf("Global int: %i\n", myGlobalVariable);

@@ -53,10 +53,10 @@
       "miDebuggerPath": "/usr/bin/gdb"
     },
     {
-      "name": "Scope",
+      "name": "pointers",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/scope",
+      "program": "${fileDirname}/pointers",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
@@ -75,7 +75,33 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "scope build",
+      "preLaunchTask": "pointers build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "stack",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/stack",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "stack build",
       "miDebuggerPath": "/usr/bin/gdb"
     },
     {

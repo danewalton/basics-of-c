@@ -28,11 +28,11 @@ gcc helloworld.c -o helloworld
 ./helloworld
 ```
 
-### scope.c
+### stack.c
 
 ```bash
-gcc scope.c lib/mymath.c -o scope
-./scope
+gcc stack.c lib/mymath.c -o stack
+./stack
 ```
 
 ### struct.c

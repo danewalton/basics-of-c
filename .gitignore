@@ -58,6 +58,6 @@ dkms.conf
 
 helloworld
 pointers
-scope
+stack
 struct
 malloc
