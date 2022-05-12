@@ -49,7 +49,7 @@ void printExample(void)
   printf("I have a character for you: %c\n", 'q');
 
   // Character as an integer
-  printf("I have a disguised integer for you: %i\n", 'q');
+  printf("I have a disguised integer for you: 0x%x\n", 'q');
 
   // String
   printf("I have a string for you: %s", "What is the airspeed velocity of an unladen swallow?\n");
