@@ -43,14 +43,17 @@ void printExample(void)
 */
 
   // Integer
-  printf("I have a number for you: %i\n", 42);
+  int myInteger = 42;
+  printf("I have a number for you: %i\n", myInteger);
 
   // Character
-  printf("I have a character for you: %c\n", 'q');
+  char myChar = 'q';
+  printf("I have a character for you: %c\n", myChar);
 
   // Character as an integer
-  printf("I have a disguised integer for you: 0x%x\n", 'q');
+  printf("I have a disguised integer for you: 0x%x\n", myChar);
 
   // String
-  printf("I have a string for you: %s", "What is the airspeed velocity of an unladen swallow?\n");
+  char* myString = "What is the airspeed velocity of an unladen swallow?\n";
+  printf("I have a string for you: %s", myString);
 }
