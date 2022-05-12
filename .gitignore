@@ -53,3 +53,11 @@ dkms.conf
 
 # Preprocessed Files
 *.preprocess
+
+# Executables
+
+helloworld
+pointers
+scope
+struct
+malloc

@@ -1,0 +1,109 @@
+{
+  "configurations": [
+    {
+      "name": "Hello World",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/helloworld",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "HelloWorld build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "Struct",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/struct",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "struct build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "Scope",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/scope",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "scope build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    },
+    {
+      "name": "Malloc",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/malloc",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "malloc build",
+      "miDebuggerPath": "/usr/bin/gdb"
+    }
+  ],
+  "version": "2.0.0",
+}
