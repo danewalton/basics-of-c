@@ -53,7 +53,7 @@
       "miDebuggerPath": "/usr/bin/gdb"
     },
     {
-      "name": "pointers",
+      "name": "Pointers",
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}/pointers",
@@ -79,7 +79,7 @@
       "miDebuggerPath": "/usr/bin/gdb"
     },
     {
-      "name": "stack",
+      "name": "Stack",
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}/stack",
