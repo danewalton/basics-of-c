@@ -16,8 +16,6 @@ int main(void)
 {
   mallocExample();
 
-  getchar();
-
   memoryLeakExample();
 }
 
