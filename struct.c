@@ -13,15 +13,13 @@ struct FooStruct
   int b;
 };
 
-typedef struct FooStruct FooStructType;
-
-void setStructByValue(FooStructType modifyMe)
+void setStructByValue(struct FooStruct modifyMe)
 {
   modifyMe.a = 100;
   modifyMe.b = 200;
 }
 
-void setStruct(FooStructType* modifyMe)
+void setStruct(struct FooStruct* modifyMe)
 {
   modifyMe->a = 100;
   modifyMe->b = 200;
@@ -39,36 +37,14 @@ void structExample(void)
   printf("Size of FooStruct: %li\n", sizeof(myStruct));
   printf("Value of (a): %i\n", myStruct.a);
   printf("Value of (b): %i\n", myStruct.b);
-  printf("---press (Enter) to advance---\n");
-  getchar();
 
-  int *castedStruct = (int*)&myStruct;
+  setStructByValue(myStruct);
 
-  printf("Value of casted struct (a): %i\n", *castedStruct);
-  printf("Value of casted struct (b): %i\n", *(castedStruct + 1));
-  printf("---press (Enter) to advance---\n");
-  getchar();
+  printf("Value of struct after set (a): %i\n", myStruct.a);
+  printf("Value of struct after set (b): %i\n", myStruct.b);
 
-  FooStructType myStructAsType;
-  myStructAsType.a = 10;
-  myStructAsType.b = 20;
+  setStruct(&myStruct);
 
-  printf("Value of struct as type (a): %i\n", myStructAsType.a);
-  printf("Value of struct as type (b): %i\n", myStructAsType.b);
-  printf("---press (Enter) to advance---\n");
-  getchar();
-
-  setStructByValue(myStructAsType);
-
-  printf("Value of struct after set (a): %i\n", myStructAsType.a);
-  printf("Value of struct after set (b): %i\n", myStructAsType.b);
-  printf("---press (Enter) to advance---\n");
-  getchar();
-
-  setStruct(&myStructAsType);
-
-  printf("Value of struct after set (a): %i\n", myStructAsType.a);
-  printf("Value of struct after set (b): %i\n", myStructAsType.b);
-  printf("---press (Enter) to advance---\n");
-  getchar();
+  printf("Value of struct after set (a): %i\n", myStruct.a);
+  printf("Value of struct after set (b): %i\n", myStruct.b);
 }
